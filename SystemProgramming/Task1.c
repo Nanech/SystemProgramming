@@ -5,6 +5,10 @@ float quadratic_equation(float x) {
 	printf_s("\nenter values of a, b, c\nthe format is \"20 14 15\" only numbers, and you get a = 10, b = 14, c = 15\nremember the 14,6 writes like 14.6\n\n");
 	float a, b, c;
 	int counter = scanf("%f %f %f", &a, &b, &c);
+	if (a == 0.0) {
+		printf("the a value could`t be a zero");
+		return 0;
+	} 
 	return a * pow(x, 2.0) + b * x + c;
 }
 

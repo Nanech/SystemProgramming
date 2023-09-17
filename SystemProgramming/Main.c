@@ -5,7 +5,7 @@
 int main(void) {
 	system("chcp 1251>nul");
 
-	choice();
+	//choice();
 
 	return 0;
 }
